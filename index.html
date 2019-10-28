@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Calculator</title>
+	<meta charset="utf-8">
+	<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="konzola">
+			<div class="top">
+				<span id="pbroj">1484</span><span id="operator">+</span>
+			</div>
+			<div class="bottom">
+				<span id="dbroj">123456</span>
+			</div>
+		</div>
+		<div>
+			<button onclick="test(this)">7</button>
+			<button onclick="test(this)">8</button>
+			<button onclick="test(this)">9</button>
+			<button onclick="operatora('/')">/</button>
+		</div>
+		<div>
+			<button onclick="test(this)">4</button>
+			<button onclick="test(this)">5</button>
+			<button onclick="test(this)">6</button>
+			<button onclick="operatora('*')">*</button>
+		</div>
+		<div>
+			<button onclick="test(this)">1</button>
+			<button onclick="test(this)">2</button>
+			<button onclick="test(this)">3</button>
+			<button onclick="operatora('-')">-</button>
+		</div>
+		<div>
+			<button class="nula"  onclick="test(this)">0</button>
+			<button onclick="test(this)">.</button>
+			<button onclick="operatora('+')">+</button>
+		</div>
+		<div>
+			<button class="nula" onclick="izracunaj()">=</button>
+			<button class="nula" onclick="reset()">Reset</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
